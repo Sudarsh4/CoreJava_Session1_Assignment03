@@ -1,0 +1,33 @@
+// Importing the scanner library for the user input
+import java.util.Scanner;
+
+public class Assignment_103 {
+
+	public static void main(String[] args) {
+		// Creating the scanner to get the user input numbers
+		Scanner usrinput = new Scanner(System.in);  
+		System.out.println("Please enter the value for num1");
+		int num1 = usrinput.nextInt();
+		System.out.println("The received value of num1 = "+num1);
+		
+		System.out.println("\nPlease enter the value for num2");		
+		int num2 = usrinput.nextInt();
+		System.out.println("The received value of num2 = "+num2);
+		
+		System.out.println("\n ---=== SWAPPING VALUES WITHOUT THIRD VARIABLE METHOD 1 BY CHEAT METHOD ;) ===---- ");
+		System.out.println("\nThe Swapped value (by calling num2 as num1) of num1 = "+num2);
+		
+		System.out.println("\nThe Swapped value (by calling num1 as num2) of num2 = "+num1);
+
+		System.out.println("\n ---=== SWAPPING VALUES WITHOUT THIRD VARIABLE METHOD 2 USING LOGIC :) ===---- ");
+		num1 = num1 + num2;
+		System.out.println("\nThe new value of (num1 + num2) = num1(NEW) is "+num1);
+		num2 = num1 - num2;
+		System.out.println("\nThe new value of (num1(NEW) - num2) = num2(SWAPPED) is "+num2);
+		num1 = num1 - num2;
+		System.out.println("\nThe new value of (num1(NEW) - num2(SWAPPED)) = num1(SWAPPED) is "+num1);
+		
+		System.out.println("\n ---=== End of Program ===---- ");
+	}
+
+}
